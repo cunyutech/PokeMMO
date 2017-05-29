@@ -28,7 +28,7 @@ export function parseBlock() {
 
 /**
  * Parse async statement
- * Identifier () | = | ; 
+ * Identifier () | = | ;
  * @return {Object}
  */
 export function parseAsyncStatement() {
@@ -60,7 +60,7 @@ export function isSet() {
 
 /**
  * Parse identifier route
- * Identifier () | = | . | ; 
+ * Identifier () | = | . | ;
  * @return {Object}
  */
 export function parseIdentifierRoute() {
@@ -166,23 +166,6 @@ export function parseReturnStatement() {
   ast = new NODE_LIST.ReturnStatement();
   ast.value = this.parseParentheseExpression();
   this.next();
-
-  return (ast);
-
-}
-
-/**
- * Parse brace body
- * { Body }
- * @return {Object}
- */
-export function parseBraceBody() {
-
-  let ast = null;
-
-  this.expect("LBRACE");
-  ast = this.parseBlockStatement();
-  this.expect("RBRACE");
 
   return (ast);
 
