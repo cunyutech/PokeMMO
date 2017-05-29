@@ -1,0 +1,504 @@
+{
+  "coverage": "86.78%",
+  "expectCount": 946,
+  "actualCount": 821,
+  "files": {
+    "src/Engine/Input/Keyboard.js": {
+      "expectCount": 117,
+      "actualCount": 117,
+      "undocumentLines": []
+    },
+    "src/Engine/Environment/Parser/NodeList.js": {
+      "expectCount": 15,
+      "actualCount": 2,
+      "undocumentLines": [
+        158,
+        123,
+        98,
+        40,
+        146,
+        74,
+        85,
+        62,
+        134,
+        29,
+        51,
+        111,
+        27
+      ]
+    },
+    "src/Engine/Audio/index.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        91
+      ]
+    },
+    "src/cfg.js": {
+      "expectCount": 43,
+      "actualCount": 43,
+      "undocumentLines": []
+    },
+    "src/Engine/Camera/index.js": {
+      "expectCount": 30,
+      "actualCount": 24,
+      "undocumentLines": [
+        240,
+        241,
+        40,
+        183,
+        139,
+        140
+      ]
+    },
+    "src/Engine/Commander/index.js": {
+      "expectCount": 11,
+      "actualCount": 11,
+      "undocumentLines": []
+    },
+    "src/Engine/Connection/index.js": {
+      "expectCount": 17,
+      "actualCount": 16,
+      "undocumentLines": [
+        290
+      ]
+    },
+    "src/Engine/Controller/index.js": {
+      "expectCount": 8,
+      "actualCount": 8,
+      "undocumentLines": []
+    },
+    "src/Engine/DisplayObject/index.js": {
+      "expectCount": 6,
+      "actualCount": 6,
+      "undocumentLines": []
+    },
+    "src/Engine/Renderer/webgl/index.js": {
+      "expectCount": 34,
+      "actualCount": 21,
+      "undocumentLines": [
+        80,
+        72,
+        74,
+        44,
+        139,
+        73,
+        75,
+        70,
+        82,
+        131,
+        77,
+        133,
+        78
+      ]
+    },
+    "src/Engine/Editor/index.js": {
+      "expectCount": 28,
+      "actualCount": 26,
+      "undocumentLines": [
+        252,
+        82
+      ]
+    },
+    "src/Engine/index.js": {
+      "expectCount": 32,
+      "actualCount": 32,
+      "undocumentLines": []
+    },
+    "src/Engine/Entity/index.js": {
+      "expectCount": 92,
+      "actualCount": 82,
+      "undocumentLines": [
+        580,
+        741,
+        757,
+        265,
+        644,
+        274,
+        341,
+        272,
+        258,
+        273
+      ]
+    },
+    "src/Engine/Environment/index.js": {
+      "expectCount": 9,
+      "actualCount": 9,
+      "undocumentLines": []
+    },
+    "src/Engine/Environment/Evaluator/index.js": {
+      "expectCount": 24,
+      "actualCount": 24,
+      "undocumentLines": []
+    },
+    "src/Packets/Facing.js": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
+    },
+    "src/Game/index.js": {
+      "expectCount": 12,
+      "actualCount": 6,
+      "undocumentLines": [
+        85,
+        28,
+        32,
+        30,
+        27,
+        67
+      ]
+    },
+    "src/Engine/Environment/Tokenizer/tokens.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "src/Engine/Environment/Tokenizer/index.js": {
+      "expectCount": 20,
+      "actualCount": 17,
+      "undocumentLines": [
+        252,
+        193,
+        250
+      ]
+    },
+    "src/Engine/Input/index.js": {
+      "expectCount": 10,
+      "actualCount": 6,
+      "undocumentLines": [
+        20,
+        21,
+        18,
+        16
+      ]
+    },
+    "src/Packets/Jumping.js": {
+      "expectCount": 4,
+      "actualCount": 4,
+      "undocumentLines": []
+    },
+    "src/Engine/Language/index.js": {
+      "expectCount": 10,
+      "actualCount": 10,
+      "undocumentLines": []
+    },
+    "src/Game/entities/Light/index.js": {
+      "expectCount": 13,
+      "actualCount": 2,
+      "undocumentLines": [
+        16,
+        44,
+        38,
+        32,
+        36,
+        34,
+        28,
+        26,
+        42,
+        46,
+        30
+      ]
+    },
+    "src/Engine/Map/index.js": {
+      "expectCount": 32,
+      "actualCount": 28,
+      "undocumentLines": [
+        153,
+        74,
+        136,
+        137
+      ]
+    },
+    "src/Engine/Map/MapEntity.js": {
+      "expectCount": 12,
+      "actualCount": 3,
+      "undocumentLines": [
+        37,
+        24,
+        30,
+        22,
+        26,
+        34,
+        32,
+        28,
+        20
+      ]
+    },
+    "src/Engine/utils/index.js": {
+      "expectCount": 17,
+      "actualCount": 17,
+      "undocumentLines": []
+    },
+    "src/Engine/Environment/Tester/tests.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/Math.js": {
+      "expectCount": 16,
+      "actualCount": 16,
+      "undocumentLines": []
+    },
+    "src/Engine/MiniMap/index.js": {
+      "expectCount": 22,
+      "actualCount": 19,
+      "undocumentLines": [
+        89,
+        93,
+        91
+      ]
+    },
+    "src/Game/entities/Monster.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        3,
+        14
+      ]
+    },
+    "src/Engine/Input/Mouse.js": {
+      "expectCount": 3,
+      "actualCount": 3,
+      "undocumentLines": []
+    },
+    "src/Engine/Notification/index.js": {
+      "expectCount": 42,
+      "actualCount": 32,
+      "undocumentLines": [
+        229,
+        165,
+        163,
+        268,
+        178,
+        173,
+        169,
+        167,
+        286,
+        131
+      ]
+    },
+    "src/Engine/Environment/Parser/index.js": {
+      "expectCount": 10,
+      "actualCount": 10,
+      "undocumentLines": []
+    },
+    "src/Engine/Path/index.js": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
+    },
+    "src/Game/entities/Player/new/index.js": {
+      "expectCount": 36,
+      "actualCount": 29,
+      "undocumentLines": [
+        20,
+        247,
+        69,
+        144,
+        137,
+        145,
+        138
+      ]
+    },
+    "src/Game/entities/Player/index.js": {
+      "expectCount": 38,
+      "actualCount": 30,
+      "undocumentLines": [
+        22,
+        314,
+        279,
+        71,
+        146,
+        139,
+        147,
+        140
+      ]
+    },
+    "src/Packets/Position.js": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "src/Engine/Renderer/index.js": {
+      "expectCount": 23,
+      "actualCount": 23,
+      "undocumentLines": []
+    },
+    "src/Engine/Shadow/index.js": {
+      "expectCount": 10,
+      "actualCount": 10,
+      "undocumentLines": []
+    },
+    "src/Engine/Environment/Tester/index.js": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "src/Engine/Texture/index.js": {
+      "expectCount": 18,
+      "actualCount": 18,
+      "undocumentLines": []
+    },
+    "src/Packets/Velocity.js": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
+    },
+    "src/Engine/Map/events.js": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
+    },
+    "src/Engine/Controller/actions.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/Engine/Entity/functions.js": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "src/Engine/Map/functions.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "src/Game/entities/Player/walk.js": {
+      "expectCount": 9,
+      "actualCount": 8,
+      "undocumentLines": [
+        107
+      ]
+    },
+    "src/Game/entities/Player/new/walk.js": {
+      "expectCount": 5,
+      "actualCount": 4,
+      "undocumentLines": [
+        15
+      ]
+    },
+    "src/Game/entities/Player/new/face.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/Game/entities/Player/face.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/Engine/Renderer/render.js": {
+      "expectCount": 12,
+      "actualCount": 12,
+      "undocumentLines": []
+    },
+    "src/Engine/Editor/tileset.js": {
+      "expectCount": 3,
+      "actualCount": 2,
+      "undocumentLines": [
+        11
+      ]
+    },
+    "src/Engine/Texture/effects.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "src/Engine/Editor/commands.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        6
+      ]
+    },
+    "src/Engine/Renderer/grid.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/Engine/logic.js": {
+      "expectCount": 6,
+      "actualCount": 6,
+      "undocumentLines": []
+    },
+    "src/Game/entities/Player/follow.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/Game/input.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        217,
+        1,
+        178
+      ]
+    },
+    "src/Engine/Environment/Parser/parse.js": {
+      "expectCount": 12,
+      "actualCount": 12,
+      "undocumentLines": []
+    },
+    "src/Game/entities/Player/new/jump.js": {
+      "expectCount": 3,
+      "actualCount": 2,
+      "undocumentLines": [
+        10
+      ]
+    },
+    "src/Game/entities/Player/jump.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "src/Engine/Renderer/webgl/shaders.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        118,
+        41
+      ]
+    },
+    "src/Engine/Environment/Parser/expression.js": {
+      "expectCount": 4,
+      "actualCount": 4,
+      "undocumentLines": []
+    },
+    "src/Game/entities/Player/sound.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/Game/entities/Player/new/sound.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/Engine/Environment/Parser/precedence.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "src/Engine/Renderer/debug.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/Engine/Editor/render.js": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "src/Engine/sound.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    }
+  }
+}

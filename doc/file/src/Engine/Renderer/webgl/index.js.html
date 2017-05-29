@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../../">
+  <title data-ice="title">src/Engine/Renderer/webgl/index.js | API Document</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Math.js~Mathematical.html">Mathematical</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-BGM">BGM</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-BGS">BGS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-BROWSERS">BROWSERS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CANVAS">CANVAS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CONNECTION_PORT">CONNECTION_PORT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CONNECTION_URL">CONNECTION_URL</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ColorPalette">ColorPalette</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DEBUG_FPS">DEBUG_FPS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DEBUG_MODE">DEBUG_MODE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DEFAULT_LANG">DEFAULT_LANG</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DEV_MODE">DEV_MODE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DIMENSION">DIMENSION</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DISPLAY_SHADOWS">DISPLAY_SHADOWS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DOWN">DOWN</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EASING_CAMERA">EASING_CAMERA</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EDIT_MODE">EDIT_MODE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FREE_CAMERA">FREE_CAMERA</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-GOD_MODE">GOD_MODE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-GRAVITY">GRAVITY</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-GRID_WIDTH">GRID_WIDTH</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-IS_CLIENT">IS_CLIENT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-LEFT">LEFT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-LOCAL_PLAYER">LOCAL_PLAYER</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-MAX_SCALE">MAX_SCALE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-MINI_MAP">MINI_MAP</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-MIN_SCALE">MIN_SCALE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-OFFLINE_MODE">OFFLINE_MODE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-PIXEL_SCALE">PIXEL_SCALE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RECORD_MODE">RECORD_MODE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RENDER_MODE">RENDER_MODE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RIGHT">RIGHT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SHADOW_ALPHA">SHADOW_ALPHA</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SHADOW_X">SHADOW_X</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SHADOW_Y">SHADOW_Y</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-TILESET_MODE">TILESET_MODE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-TYPES">TYPES</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-UP">UP</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-VERSION">VERSION</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-VOLUME">VOLUME</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-WALK_BY_KEYBOARD">WALK_BY_KEYBOARD</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-WGL">WGL</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-WGL_SUPPORT">WGL_SUPPORT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Y_DEPTH_HACK">Y_DEPTH_HACK</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/index.js~Engine.html">Engine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-float">float</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isRenderable">isRenderable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-logic">logic</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-orbit">orbit</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-updateEntity">updateEntity</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-updateNotification">updateNotification</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-updateEntityNoise">updateEntityNoise</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Audio</div><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Audio">Audio</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Camera</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Camera/index.js~Camera.html">Camera</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Commander</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Commander/index.js~Commander.html">Commander</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Connection</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Connection/index.js~Connection.html">Connection</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Controller</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Controller/index.js~Controller.html">Controller</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-actions">actions</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/DisplayObject</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/DisplayObject/index.js~DisplayObject.html">DisplayObject</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Editor</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Editor/index.js~Editor.html">Editor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderEditorMode">renderEditorMode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderEntityCollisionBox">renderEntityCollisionBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderEntityNoise">renderEntityNoise</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderEntitySelection">renderEntitySelection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderSelectedEntities">renderSelectedEntities</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderSelection">renderSelection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderSelectionText">renderSelectionText</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clickedInsideTileset">clickedInsideTileset</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-selectTile">selectTile</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-updateTilesetPosition">updateTilesetPosition</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-commands">commands</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Entity</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Entity/index.js~Entity.html">Entity</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-addEntity">addEntity</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-cloneEntity">cloneEntity</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getEntityById">getEntityById</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getEntityByProperty">getEntityByProperty</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeEntity">removeEntity</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeEntityById">removeEntityById</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeEntityFromArray">removeEntityFromArray</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Environment</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Environment/index.js~Environment.html">Environment</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Environment/Evaluator</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Environment/Evaluator/index.js~Evaluator.html">Evaluator</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Environment/Parser</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Environment/Parser/NodeList.js~NODE_LIST.html">NODE_LIST</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Environment/Parser/index.js~Parser.html">Parser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseBase">parseBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseExpression">parseExpression</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseMemberExpression">parseMemberExpression</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseUnary">parseUnary</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isSet">isSet</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseArguments">parseArguments</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseAssignmentExpression">parseAssignmentExpression</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseAsyncStatement">parseAsyncStatement</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseBlock">parseBlock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseBlockStatement">parseBlockStatement</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseBraceBody">parseBraceBody</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseCallExpression">parseCallExpression</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseIdentifierRoute">parseIdentifierRoute</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseIfStatement">parseIfStatement</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseParentheseExpression">parseParentheseExpression</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseReturnStatement">parseReturnStatement</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-NODE_TYPES">NODE_TYPES</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-precedence">precedence</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Environment/Tester</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Environment/Tester/index.js~Tester.html">Tester</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Mathematical">Mathematical</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Environment/Tokenizer</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Environment/Tokenizer/index.js~Tokenizer.html">Tokenizer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-IGNORE">IGNORE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-TOKENS">TOKENS</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Input</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Input/Keyboard.js~Keyboard.html">Keyboard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Input/Mouse.js~Mouse.html">Mouse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Input/index.js~Input.html">Input</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Language</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Language/index.js~Language.html">Language</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Map</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Map/MapEntity.js~MapEntity.html">MapEntity</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Map/index.js~Map.html">Map</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-actionTrigger">actionTrigger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-collidesWithCollisionBox">collidesWithCollisionBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isEntityCollidable">isEntityCollidable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isObstacle">isObstacle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-triggerEvent">triggerEvent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-addMap">addMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-distance">distance</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/MiniMap</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/MiniMap/index.js~MiniMap.html">MiniMap</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Notification</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Notification/index.js~Notification.html">Notification</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Path</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Path/index.js~Path.html">Path</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Renderer</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Renderer/index.js~Renderer.html">Renderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderDebugScene">renderDebugScene</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-drawGrid">drawGrid</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clear">clear</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-draw">draw</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-drawPixelText">drawPixelText</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-drawTileset">drawTileset</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-entityInSelectionRange">entityInSelectionRange</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getAnimationFrame">getAnimationFrame</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-render">render</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderEntities">renderEntities</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderEntity">renderEntity</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderMap">renderMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderShadow">renderShadow</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-updateEntitySpriteFrame">updateEntitySpriteFrame</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Renderer/webgl</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Renderer/webgl/index.js~WGL_Renderer.html">WGL_Renderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-outlinefs">outlinefs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-spritefs">spritefs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-spritevs">spritevs</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Shadow</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Shadow/index.js~Shadow.html">Shadow</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Texture</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Texture/index.js~Texture.html">Texture</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-colorizePixels">colorizePixels</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-drawTimeLightning">drawTimeLightning</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/utils</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ajax">ajax</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-antiCache">antiCache</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-canvasToImage">canvasToImage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createCanvasBuffer">createCanvasBuffer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getLocalHost">getLocalHost</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPath">getPath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getSprite">getSprite</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getTime">getTime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getWGLContext">getWGLContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-imageToCanvas">imageToCanvas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-inherit">inherit</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseString">parseString</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-supportWGL">supportWGL</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tileContainsImageData">tileContainsImageData</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-uHash">uHash</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Maps">Maps</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-TextureCache">TextureCache</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Game</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Game/index.js~Game.html">Game</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-global">global</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-keys">keys</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-mouse">mouse</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Game/entities</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Game/entities/Monster.js~Monster.html">Monster</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Game/entities/Light</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Game/entities/Light/index.js~Light.html">Light</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Game/entities/Player</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Game/entities/Player/index.js~Player.html">Player</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-changeFacing">changeFacing</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-follow">follow</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-jump">jump</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-jumping">jumping</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-playStateSound">playStateSound</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-bump">bump</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-halfStep">halfStep</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-move">move</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onlineMove">onlineMove</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-skipBump">skipBump</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-startMoving">startMoving</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-stopMoving">stopMoving</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-walk">walk</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-walkTo">walkTo</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Game/entities/Player/new</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Game/entities/Player/new/index.js~Player.html">Player</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-changeFacing">changeFacing</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-jump">jump</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-jumpAnimation">jumpAnimation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-jumping">jumping</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-playStateSound">playStateSound</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-bumpAnimation">bumpAnimation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-halfStep">halfStep</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-move">move</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-moveAnimation">moveAnimation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-stopMoving">stopMoving</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Packets</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Packets/Facing.js~Facing.html">Facing</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Packets/Jumping.js~Jumping.html">Jumping</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Packets/Position.js~Position.html">Position</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Packets/Velocity.js~Velocity.html">Velocity</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/Engine/Renderer/webgl/index.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/** Inspired by gles.js web demo */
+import {
+  DIMENSION,
+  PIXEL_SCALE,
+  TYPES
+} from &quot;../../../cfg&quot;;
+
+import math from &quot;../../../Math&quot;;
+
+import { canvasToImage } from &quot;../../utils&quot;;
+
+import * as shaders from &quot;./shaders&quot;;
+
+/**
+ * WebGL Renderer
+ * @class WGL_Renderer
+ * @export
+ */
+export default class WGL_Renderer {
+
+  /**
+   * @param {Object} instance
+   * @constructor
+   */
+  constructor(instance) {
+
+    /**
+     * Instance ref
+     * @type {Object}
+     */
+    this.instance = instance;
+
+    /**
+     * Sprite shader
+     * @type {Object}
+     */
+    this.spriteShader = null;
+
+    /**
+     * Shaders
+     * @type {Object}
+     */
+    this.vshader = null;
+    this.fshader = null;
+
+    /**
+     * Gl context ref
+     * @type {Object}
+     */
+    this.gl = instance.gl;
+
+    /**
+     * Sprite position buffer
+     * @type {Array}
+     */
+    this.spritepos = null;
+
+    /**
+     * Position buffer
+     * @type {Object}
+     */
+    this.posBuffer = null;
+
+    /**
+     * Rotation buffer
+     * @type {Object}
+     */
+    this.rotBuffer = null;
+
+    this.lightZ = 0.075;
+
+    this.ambientColor = new Float32Array([1.0, 1.0, 1.0, 0.8]);
+    this.lightColor = new Float32Array([1.0, 1.0, 1.0, 1.0]);
+    this.falloff = new Float32Array([0.4, 7.0, 30.0]);
+    this.lightPos = new Float32Array([0, 0, this.lightZ]);
+
+    this.spriteIdx = null;
+    this.spriteRot = null;
+
+    this.EMPTY_ARRAY = new Float32Array(0);
+
+    this.ready = false;
+
+  }
+
+  /**
+   * Initialise
+   */
+  init() {
+
+    let gl = this.gl;
+
+    gl.disable(gl.DEPTH_TEST);
+    gl.disable(gl.CULL_FACE);
+    gl.disable(gl.BLEND);
+
+    this.buildShader();
+
+    this.ready = true;
+
+    console.log(this.gl);
+
+  }
+
+  /**
+   * Build a shader
+   */
+  buildShader() {
+
+    let gl = this.gl;
+
+    let loc = null;
+
+    let length = 1e3;
+
+    let shader = null;
+
+    let vshaderid = gl.createShader(gl.VERTEX_SHADER);
+    let fshaderid = gl.createShader(gl.FRAGMENT_SHADER);
+
+    this.compileShader(0, vshaderid, shaders.spritevs);
+    this.compileShader(1, fshaderid, shaders.spritefs);
+
+    shader = gl.createProgram();
+
+    gl.attachShader(shader, vshaderid);
+    gl.attachShader(shader, fshaderid);
+
+    gl.linkProgram(shader);
+
+    this.shader = shader;
+
+    this.spritePos = new Float32Array(length * 12);
+    this.spriteIdx = new Float32Array(length * 6);
+    this.spriteRot = new Float32Array(length * 6);
+
+    this.posBuffer = gl.createBuffer();
+    this.rotBuffer = gl.createBuffer();
+    this.idxBuffer = gl.createBuffer();
+
+    for (var i = 0; i &lt; length; i++) {
+      this.spriteIdx[6 * i + 0] = 0;
+      this.spriteIdx[6 * i + 1] = 1;
+      this.spriteIdx[6 * i + 2] = 2;
+      this.spriteIdx[6 * i + 3] = 1;
+      this.spriteIdx[6 * i + 4] = 2;
+      this.spriteIdx[6 * i + 5] = 3;
+    };
+
+    this.setAttribute(this.shader, this.idxBuffer, &quot;aIdx&quot;, length * 6, 1, this.spriteIdx);
+
+    gl.useProgram(this.shader);
+
+    loc = gl.getUniformLocation(this.shader, &quot;u_normals&quot;);
+    gl.uniform1i(loc, 1);
+
+  }
+
+  /**
+   * Draw webgl based
+   */
+  draw() {
+
+    let gl = this.gl;
+
+    let loc = null;
+
+    let map = this.instance.instance.currentMap;
+
+    if (map.renderable === false) return void 0;
+
+    /** Set global size */
+    gl.uniform2f(
+      gl.getUniformLocation(this.shader, &quot;uScale&quot;),
+      this.instance.width, this.instance.height);
+
+    /** Set ambient color */
+    gl.uniform4fv(
+      gl.getUniformLocation(this.shader, &quot;AmbientColor&quot;),
+      this.ambientColor
+    );
+
+    /** Set global resolution */
+    gl.uniform2f(
+      gl.getUniformLocation(this.shader, &quot;Resolution&quot;),
+      this.instance.camera.width, this.instance.camera.height
+    );
+
+    this.updateLights();
+
+    this.renderEntities(1);
+    this.renderMap(map);
+    this.renderEntities(0);
+
+    return void 0;
+
+  }
+
+  /**
+   * Update lights
+   */
+  updateLights() {
+
+    let gl = this.gl;
+
+    let camera = this.instance.camera;
+    let resolution = this.instance.camera.resolution;
+
+    let light = this.instance.instance.getEntityByProperty(&quot;light183&quot;, &quot;name&quot;);
+
+    let lightX = camera.position.x + ((light.position.x + DIMENSION / 2) * resolution);
+    let lightY = camera.position.y + ((light.position.y + DIMENSION / 2) * resolution);
+
+    this.lightPos[0] = lightX / camera.size.x;
+    this.lightPos[1] = 1.0 - lightY / camera.size.y;
+
+    /** Lights */
+    gl.uniform3fv(
+      gl.getUniformLocation(this.shader, &quot;LightPos&quot;),
+      this.lightPos
+    );
+    gl.uniform3fv(
+      gl.getUniformLocation(this.shader, &quot;Falloff&quot;),
+      this.falloff
+    );
+    gl.uniform4fv(
+      gl.getUniformLocation(this.shader, &quot;LightColor&quot;),
+      light.color
+    );
+    gl.uniform1f(
+      gl.getUniformLocation(this.shader, &quot;SoftLight&quot;),
+      light.soft
+    );
+    gl.uniform1f(
+      gl.getUniformLocation(this.shader, &quot;LightSize&quot;),
+      light.lightSize * resolution
+    );
+
+  }
+
+  /**
+   * Render a map
+   * @param {Object} map
+   */
+  renderMap(map) {
+
+    let gl = this.gl;
+
+    let ii = 0;
+
+    let camera = this.instance.camera;
+
+    let x = camera.position.x;
+    let y = camera.position.y;
+
+    let width  = ((map.size.x * DIMENSION) * camera.resolution) &lt;&lt; 0;
+    let height = ((map.size.y * DIMENSION) * camera.resolution) &lt;&lt; 0;
+
+    for (; ii &lt; 6; ++ii) {
+      this.spritePos[2 * ii]     = ((x &lt;&lt; 0) + width / 2) &lt;&lt; 0;
+      this.spritePos[2 * ii + 1] = ((y &lt;&lt; 0) + height / 2) &lt;&lt; 0;
+    };
+
+    gl.uniform2f(
+      gl.getUniformLocation(this.shader, &quot;uEntityScale&quot;),
+      width, height
+    );
+
+    gl.activeTexture(gl.TEXTURE1);
+    gl.bindTexture(gl.TEXTURE_2D, map.glTexture[0]);
+    gl.activeTexture(gl.TEXTURE0);
+    gl.bindTexture(gl.TEXTURE_2D, map.glTexture[0]);
+    this.setAttribute(this.shader, this.idxBuffer, &quot;aIdx&quot;, 6, 1, this.EMPTY_ARRAY);
+    this.setAttribute(this.shader, this.posBuffer, &quot;aObjCen&quot;, 6, 2, this.spritePos);
+    gl.drawArrays(gl.TRIANGLES, 0, 6);
+
+  }
+
+  /**
+   * Render entities
+   * @param {Number} lowest
+   */
+  renderEntities(lowest) {
+
+    let map = this.instance.instance.currentMap;
+
+    let entity = null;
+    let entities = map.entities;
+
+    let ii = 0;
+    let length = entities.length;
+
+    let x = 0;
+    let y = 0;
+
+    let width  = 0;
+    let height = 0;
+
+    let camera = this.instance.camera;
+
+    let camX = camera.position.x;
+    let camY = camera.position.y;
+
+    let resolution = camera.resolution;
+
+    for (ii = 0; ii &lt; length; ++ii) {
+      entity = entities[ii];
+      if (entity.type === TYPES.Light) continue;
+      if (lowest === 1) {
+        if (entity.zIndex &gt; 0) continue;
+      } else {
+        if (entity.zIndex &lt;= 0) continue;
+      }
+      if (entity.renderable === false) continue;
+      width  = (entity.size.x * resolution) * entity.scaling &lt;&lt; 0;
+      height = (entity.size.y * resolution) * entity.scaling &lt;&lt; 0;
+      x = (camX + (entity.position.x + entity.xMargin) * resolution) &lt;&lt; 0;
+      y = (camY + (entity.position.y + entity.yMargin + entity.z) * resolution) &lt;&lt; 0;
+      this.renderEntity(entity, ii, x, y, width, height);
+    };
+
+  }
+
+  /**
+   * Render a entity
+   * @param {Object} entity
+   * @param {Number} ii
+   * @param {Number} x
+   * @param {Number} y
+   * @param {Number} width
+   * @param {Number} height
+   */
+  renderEntity(entity, ii, x, y, width, height) {
+
+    let loc = null;
+
+    let gl = this.gl;
+
+    let jj = 0;
+
+    let resolution = this.instance.camera.resolution;
+
+    if (entity.type === TYPES.Notification) {
+      x = entity.absolute === true ? entity.position.x : x - (entity.xPadding * resolution);
+      y = entity.absolute === true ? entity.position.y : y - (entity.yPadding * resolution);
+      width = entity.absolute === true ? width  / resolution : width;
+      height = entity.absolute === true ? height / resolution : height;
+    }
+
+    for (jj = 0; jj &lt; 6; ++jj) {
+      this.spritePos[12 * ii + 2 * jj] = x + (width / 2);
+      this.spritePos[12 * ii + 2 * jj + 1] = y + (height / 2);
+      this.spriteRot[6 * ii + jj] = entity.r;
+    };
+
+    this.setAttribute(this.shader, this.idxBuffer, &quot;aIdx&quot;, 6, 1, this.EMPTY_ARRAY);
+    this.setAttribute(this.shader, this.posBuffer, &quot;aObjCen&quot;, 6, 2, this.spritePos);
+    this.setAttribute(this.shader, this.rotBuffer, &quot;aObjRot&quot;, 6, 1, this.spriteRot);
+
+    gl.uniform2f(
+      gl.getUniformLocation(this.shader, &quot;uEntityScale&quot;),
+      width, height
+    );
+
+    let cOpacity = entity.customOpacity();
+
+    if (cOpacity === true) {
+      gl.uniform1f(
+        gl.getUniformLocation(this.shader, &quot;Opacity&quot;),
+        entity.opacity
+      );
+    }
+
+    /** Normal */
+    gl.activeTexture(gl.TEXTURE1);
+    if (entity.hasNormalMap === true &amp;&amp; entity.normal !== null) {
+      gl.bindTexture(gl.TEXTURE_2D, entity.normal[entity.sFrame]);
+    } else {
+      gl.bindTexture(gl.TEXTURE_2D, entity.glTexture[entity.sFrame]);
+    }
+
+    /** Diffuse */
+    gl.activeTexture(gl.TEXTURE0);
+    gl.bindTexture(gl.TEXTURE_2D, entity.glTexture[entity.sFrame]);
+
+    gl.drawArrays(gl.TRIANGLES, ii * 6, 6);
+
+    /** Reset ctx opacity */
+    if (cOpacity === true) {
+      gl.uniform1f(
+        gl.getUniformLocation(this.shader, &quot;Opacity&quot;),
+        1.0
+      );
+    }
+
+    return void 0;
+
+  }
+
+  /**
+   * Buffer a 2d texture
+   * @param  {Array} sprites
+   * @return {Array}
+   */
+  bufferTexture(sprites) {
+
+    let gl = this.gl;
+
+    let ii = 0;
+    let length = 0;
+
+    let image = null;
+    let texture = null;
+
+    let textures = [];
+
+    length = sprites.length;
+
+    for (; ii &lt; length; ++ii) {
+      texture = gl.createTexture();
+      image = canvasToImage(sprites[ii].canvas);
+      gl.bindTexture(gl.TEXTURE_2D, texture);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, image);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+      gl.bindTexture(gl.TEXTURE_2D, null);
+      textures.push(texture);
+    };
+
+    return (textures);
+
+  }
+
+  /**
+   * Compile a shader
+   * @param {Number} type
+   * @param {Object} shader
+   * @param {String} shader_src
+   */
+  compileShader(type, shader, shader_src) {
+
+    let gl = this.gl;
+
+    gl.shaderSource(shader, shader_src);
+    gl.compileShader(shader);
+
+    if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+      throw &quot;shader &quot; + type + &quot; compile error: &quot; + gl.getShaderInfoLog(shader);
+    }
+
+  }
+
+  /**
+   * Resize gl viewport
+   * @param {Number} width
+   * @param {Number} height
+   */
+  resize(width, height) {
+    this.gl.viewport(0, 0, width, height);
+    this.gl.enable(this.gl.BLEND);
+    this.gl.blendFunc(this.gl.SRC_ALPHA, this.gl.ONE_MINUS_SRC_ALPHA);
+  }
+
+  /**
+   * Clear
+   */
+  clear() {
+    this.gl.clearColor(0, 0, 0, 0);
+    this.gl.clear(this.gl.COLOR_BUFFER_BIT);
+    return void 0;
+  }
+
+  /**
+   * Gl attribute set
+   * @param {Object} program
+   * @param {Object} buffer
+   * @param {String} varname
+   * @param {Number} numitems
+   * @param {Number} itemsize
+   * @param {Array}  values
+   */
+  setAttribute(program, buffer, varname, numitems, itemsize, values) {
+
+    let gl = this.gl;
+
+    var attribute = gl.getAttribLocation(program, varname);
+
+    gl.enableVertexAttribArray(attribute);
+    gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+
+    if (values.length &gt; 0) {
+      gl.bufferData(gl.ARRAY_BUFFER, values, gl.DYNAMIC_DRAW);
+    }
+
+    gl.vertexAttribPointer(attribute, itemsize, gl.FLOAT, false, 0, 0);
+
+  }
+
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.5.2)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,1090 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 3361,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 149,
+      "column": 2
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 3361,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 149,
+        "column": 2
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 65,
+        "end": 859,
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 0
+          },
+          "end": {
+            "line": 39,
+            "column": 2
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 72,
+          "end": 859,
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 7
+            },
+            "end": {
+              "line": 39,
+              "column": 2
+            }
+          },
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 78,
+              "end": 858,
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 13
+                },
+                "end": {
+                  "line": 39,
+                  "column": 1
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 78,
+                "end": 86,
+                "loc": {
+                  "start": {
+                    "line": 5,
+                    "column": 13
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 21
+                  },
+                  "identifierName": "spritevs"
+                },
+                "name": "spritevs",
+                "leadingComments": null
+              },
+              "init": {
+                "type": "TemplateLiteral",
+                "start": 89,
+                "end": 858,
+                "loc": {
+                  "start": {
+                    "line": 5,
+                    "column": 24
+                  },
+                  "end": {
+                    "line": 39,
+                    "column": 1
+                  }
+                },
+                "expressions": [],
+                "quasis": [
+                  {
+                    "type": "TemplateElement",
+                    "start": 90,
+                    "end": 857,
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 25
+                      },
+                      "end": {
+                        "line": 39,
+                        "column": 0
+                      }
+                    },
+                    "value": {
+                      "raw": "\n\n  precision lowp float;\n\n  uniform vec2 uScale;\n  uniform vec2 uEntityScale;\n  attribute vec2 aObjCen;\n  attribute float aObjRot;\n  attribute float aIdx;\n  varying vec2 uv;\n\n  void main(void) {\n    if (aIdx == 0.0) {\n      uv = vec2(0.0,0.0);\n    } else if (aIdx == 1.0) {\n      uv = vec2(1.0,0.0);\n    } else if (aIdx == 2.0) {\n      uv = vec2(0.0,1.0);\n    } else {\n      uv = vec2(1.0,1.0);\n    }\n    vec2 pos = vec2(\n      aObjCen.x + sin(aObjRot)*uEntityScale.y*(-0.5 + uv.y)\n      + cos(aObjRot)*uEntityScale.x*(-0.5 + uv.x),\n      aObjCen.y + cos(aObjRot)*uEntityScale.y*(-0.5 + uv.y)\n      - sin(aObjRot)*uEntityScale.x*(-0.5 + uv.x)\n    );\n    gl_Position = vec4(\n      -1.0 + 2.0*pos.x/uScale.x,\n      1.0 - 2.0*pos.y/uScale.y,\n      0.0, 1.0\n    );\n  }\n\n",
+                      "cooked": "\n\n  precision lowp float;\n\n  uniform vec2 uScale;\n  uniform vec2 uEntityScale;\n  attribute vec2 aObjCen;\n  attribute float aObjRot;\n  attribute float aIdx;\n  varying vec2 uv;\n\n  void main(void) {\n    if (aIdx == 0.0) {\n      uv = vec2(0.0,0.0);\n    } else if (aIdx == 1.0) {\n      uv = vec2(1.0,0.0);\n    } else if (aIdx == 2.0) {\n      uv = vec2(0.0,1.0);\n    } else {\n      uv = vec2(1.0,1.0);\n    }\n    vec2 pos = vec2(\n      aObjCen.x + sin(aObjRot)*uEntityScale.y*(-0.5 + uv.y)\n      + cos(aObjRot)*uEntityScale.x*(-0.5 + uv.x),\n      aObjCen.y + cos(aObjRot)*uEntityScale.y*(-0.5 + uv.y)\n      - sin(aObjRot)*uEntityScale.x*(-0.5 + uv.x)\n    );\n    gl_Position = vec4(\n      -1.0 + 2.0*pos.x/uScale.x,\n      1.0 - 2.0*pos.y/uScale.y,\n      0.0, 1.0\n    );\n  }\n\n"
+                    },
+                    "tail": true
+                  }
+                ]
+              },
+              "leadingComments": null
+            }
+          ],
+          "kind": "const",
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Thanks to mattdesl for the\n * normal mappping thingys\n ",
+              "start": 0,
+              "end": 64,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 4,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": []
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Thanks to mattdesl for the\n * normal mappping thingys\n ",
+            "start": 0,
+            "end": 64,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 4,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 861,
+        "end": 2590,
+        "loc": {
+          "start": {
+            "line": 41,
+            "column": 0
+          },
+          "end": {
+            "line": 116,
+            "column": 2
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 868,
+          "end": 2590,
+          "loc": {
+            "start": {
+              "line": 41,
+              "column": 7
+            },
+            "end": {
+              "line": 116,
+              "column": 2
+            }
+          },
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 874,
+              "end": 2589,
+              "loc": {
+                "start": {
+                  "line": 41,
+                  "column": 13
+                },
+                "end": {
+                  "line": 116,
+                  "column": 1
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 874,
+                "end": 882,
+                "loc": {
+                  "start": {
+                    "line": 41,
+                    "column": 13
+                  },
+                  "end": {
+                    "line": 41,
+                    "column": 21
+                  },
+                  "identifierName": "spritefs"
+                },
+                "name": "spritefs"
+              },
+              "init": {
+                "type": "TemplateLiteral",
+                "start": 885,
+                "end": 2589,
+                "loc": {
+                  "start": {
+                    "line": 41,
+                    "column": 24
+                  },
+                  "end": {
+                    "line": 116,
+                    "column": 1
+                  }
+                },
+                "expressions": [],
+                "quasis": [
+                  {
+                    "type": "TemplateElement",
+                    "start": 886,
+                    "end": 2588,
+                    "loc": {
+                      "start": {
+                        "line": 41,
+                        "column": 25
+                      },
+                      "end": {
+                        "line": 116,
+                        "column": 0
+                      }
+                    },
+                    "value": {
+                      "raw": "\n\n  precision lowp float;\n\n  #define STEP_A 0.4\n  #define STEP_B 0.6\n  #define STEP_C 0.8\n  #define STEP_D 1.0\n\n  uniform sampler2D u_texture0;\n  uniform sampler2D u_normals;\n\n  varying vec2 uv;\n\n  uniform vec4 AmbientColor;\n  uniform vec2 Resolution;\n\n  uniform float Opacity;\n\n  uniform float LightSize;\n  uniform bool SoftLight;\n  uniform vec3 LightPos;\n  uniform vec4 LightColor;\n  uniform vec3 Falloff;\n\n  void main() {\n\n    vec3 Sum = vec3(0.0);\n\n    vec4 DiffuseColor = texture2D(u_texture0, uv);\n\n    vec3 NormalMap = texture2D(u_normals, uv).rgb;\n\n    vec3 LightDir = vec3(LightPos.xy - (gl_FragCoord.xy / Resolution.xy), LightPos.z);\n\n    LightDir.x /= (LightSize / Resolution.x);\n    LightDir.y /= (LightSize / Resolution.y);\n\n    float D = length(LightDir);\n\n    vec3 N = normalize(NormalMap * 2.0 - 1.0);\n    vec3 L = normalize(LightDir);\n\n    N = mix(N, vec3(0), 0.5);\n\n    float df = max(dot(N, L), 0.0);\n\n    vec3 Diffuse = (LightColor.rgb * LightColor.a) * df;\n\n    vec3 Ambient = AmbientColor.rgb * AmbientColor.a;\n\n    float Attenuation = 1.0 / ( Falloff.x + (Falloff.y*D) + (Falloff.z*D*D) );\n\n    if (SoftLight == false) {\n      if (Attenuation < STEP_A) Attenuation = 0.0;\n      else if (Attenuation < STEP_B) Attenuation = STEP_B;\n      else if (Attenuation < STEP_C) Attenuation = STEP_C;\n      else Attenuation = STEP_D;\n    }\n\n    vec3 Intensity = Ambient + Diffuse * Attenuation;\n    vec3 FinalColor = DiffuseColor.rgb * Intensity;\n\n    Sum += FinalColor;\n\n    if (SoftLight == false) {\n      gl_FragColor = vec4(Sum, DiffuseColor.a * Opacity);\n    } else {\n      gl_FragColor = vec4(FinalColor, DiffuseColor.a * Opacity);\n    }\n\n    if (gl_FragColor.a < 0.1) discard;\n\n  }\n\n",
+                      "cooked": "\n\n  precision lowp float;\n\n  #define STEP_A 0.4\n  #define STEP_B 0.6\n  #define STEP_C 0.8\n  #define STEP_D 1.0\n\n  uniform sampler2D u_texture0;\n  uniform sampler2D u_normals;\n\n  varying vec2 uv;\n\n  uniform vec4 AmbientColor;\n  uniform vec2 Resolution;\n\n  uniform float Opacity;\n\n  uniform float LightSize;\n  uniform bool SoftLight;\n  uniform vec3 LightPos;\n  uniform vec4 LightColor;\n  uniform vec3 Falloff;\n\n  void main() {\n\n    vec3 Sum = vec3(0.0);\n\n    vec4 DiffuseColor = texture2D(u_texture0, uv);\n\n    vec3 NormalMap = texture2D(u_normals, uv).rgb;\n\n    vec3 LightDir = vec3(LightPos.xy - (gl_FragCoord.xy / Resolution.xy), LightPos.z);\n\n    LightDir.x /= (LightSize / Resolution.x);\n    LightDir.y /= (LightSize / Resolution.y);\n\n    float D = length(LightDir);\n\n    vec3 N = normalize(NormalMap * 2.0 - 1.0);\n    vec3 L = normalize(LightDir);\n\n    N = mix(N, vec3(0), 0.5);\n\n    float df = max(dot(N, L), 0.0);\n\n    vec3 Diffuse = (LightColor.rgb * LightColor.a) * df;\n\n    vec3 Ambient = AmbientColor.rgb * AmbientColor.a;\n\n    float Attenuation = 1.0 / ( Falloff.x + (Falloff.y*D) + (Falloff.z*D*D) );\n\n    if (SoftLight == false) {\n      if (Attenuation < STEP_A) Attenuation = 0.0;\n      else if (Attenuation < STEP_B) Attenuation = STEP_B;\n      else if (Attenuation < STEP_C) Attenuation = STEP_C;\n      else Attenuation = STEP_D;\n    }\n\n    vec3 Intensity = Ambient + Diffuse * Attenuation;\n    vec3 FinalColor = DiffuseColor.rgb * Intensity;\n\n    Sum += FinalColor;\n\n    if (SoftLight == false) {\n      gl_FragColor = vec4(Sum, DiffuseColor.a * Opacity);\n    } else {\n      gl_FragColor = vec4(FinalColor, DiffuseColor.a * Opacity);\n    }\n\n    if (gl_FragColor.a < 0.1) discard;\n\n  }\n\n"
+                    },
+                    "tail": true
+                  }
+                ]
+              }
+            }
+          ],
+          "kind": "const",
+          "leadingComments": [],
+          "trailingComments": []
+        }
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 2592,
+        "end": 3361,
+        "loc": {
+          "start": {
+            "line": 118,
+            "column": 0
+          },
+          "end": {
+            "line": 149,
+            "column": 2
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 2599,
+          "end": 3361,
+          "loc": {
+            "start": {
+              "line": 118,
+              "column": 7
+            },
+            "end": {
+              "line": 149,
+              "column": 2
+            }
+          },
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 2605,
+              "end": 3360,
+              "loc": {
+                "start": {
+                  "line": 118,
+                  "column": 13
+                },
+                "end": {
+                  "line": 149,
+                  "column": 1
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 2605,
+                "end": 2614,
+                "loc": {
+                  "start": {
+                    "line": 118,
+                    "column": 13
+                  },
+                  "end": {
+                    "line": 118,
+                    "column": 22
+                  },
+                  "identifierName": "outlinefs"
+                },
+                "name": "outlinefs"
+              },
+              "init": {
+                "type": "TemplateLiteral",
+                "start": 2617,
+                "end": 3360,
+                "loc": {
+                  "start": {
+                    "line": 118,
+                    "column": 25
+                  },
+                  "end": {
+                    "line": 149,
+                    "column": 1
+                  }
+                },
+                "expressions": [],
+                "quasis": [
+                  {
+                    "type": "TemplateElement",
+                    "start": 2618,
+                    "end": 3359,
+                    "loc": {
+                      "start": {
+                        "line": 118,
+                        "column": 26
+                      },
+                      "end": {
+                        "line": 149,
+                        "column": 0
+                      }
+                    },
+                    "value": {
+                      "raw": "\n\n  precision lowp float;\n\n  #define PI 3.14159265359\n  #define WIDTH 10.0\n  #define COLOR vec4(0.0,0.0,0.0,1.0)\n  #define NUM_FRAMES 6.0\n\n  uniform sampler2D u_texture0;\n\n  varying vec2 uv;\n  uniform vec2 uScale;\n  uniform vec2 uEntityScale;\n\n  void main() {\n\n    vec2 point = vec2( (WIDTH/uEntityScale.x)*cos(PI), (WIDTH/uEntityScale.y)*sin(PI));\n    point = clamp(uv + point, vec2(0.0), vec4(uEntityScale.xy, uEntityScale.xy).zw );\n    float sampledAlpha = texture2D(u_texture0,  point).a;\n    float outlineAlpha = max(0.0, sampledAlpha);\n\n    gl_FragColor = mix(vec4(0.0), COLOR, outlineAlpha);\n\n    vec4 tex0 = texture2D(u_texture0, uv);\n    gl_FragColor = mix(gl_FragColor, tex0, tex0.a);\n\n    if (gl_FragColor.a < 0.5) discard;\n\n  }\n\n",
+                      "cooked": "\n\n  precision lowp float;\n\n  #define PI 3.14159265359\n  #define WIDTH 10.0\n  #define COLOR vec4(0.0,0.0,0.0,1.0)\n  #define NUM_FRAMES 6.0\n\n  uniform sampler2D u_texture0;\n\n  varying vec2 uv;\n  uniform vec2 uScale;\n  uniform vec2 uEntityScale;\n\n  void main() {\n\n    vec2 point = vec2( (WIDTH/uEntityScale.x)*cos(PI), (WIDTH/uEntityScale.y)*sin(PI));\n    point = clamp(uv + point, vec2(0.0), vec4(uEntityScale.xy, uEntityScale.xy).zw );\n    float sampledAlpha = texture2D(u_texture0,  point).a;\n    float outlineAlpha = max(0.0, sampledAlpha);\n\n    gl_FragColor = mix(vec4(0.0), COLOR, outlineAlpha);\n\n    vec4 tex0 = texture2D(u_texture0, uv);\n    gl_FragColor = mix(gl_FragColor, tex0, tex0.a);\n\n    if (gl_FragColor.a < 0.5) discard;\n\n  }\n\n"
+                    },
+                    "tail": true
+                  }
+                ]
+              }
+            }
+          ],
+          "kind": "const",
+          "leadingComments": [],
+          "trailingComments": []
+        }
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Thanks to mattdesl for the\n * normal mappping thingys\n ",
+      "start": 0,
+      "end": 64,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 3
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Thanks to mattdesl for the\n * normal mappping thingys\n ",
+      "start": 0,
+      "end": 64,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 65,
+      "end": 71,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 72,
+      "end": 77,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 7
+        },
+        "end": {
+          "line": 5,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "spritevs",
+      "start": 78,
+      "end": 86,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 13
+        },
+        "end": {
+          "line": 5,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 87,
+      "end": 88,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 22
+        },
+        "end": {
+          "line": 5,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "`",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 89,
+      "end": 90,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 24
+        },
+        "end": {
+          "line": 5,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "template",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "\n\n  precision lowp float;\n\n  uniform vec2 uScale;\n  uniform vec2 uEntityScale;\n  attribute vec2 aObjCen;\n  attribute float aObjRot;\n  attribute float aIdx;\n  varying vec2 uv;\n\n  void main(void) {\n    if (aIdx == 0.0) {\n      uv = vec2(0.0,0.0);\n    } else if (aIdx == 1.0) {\n      uv = vec2(1.0,0.0);\n    } else if (aIdx == 2.0) {\n      uv = vec2(0.0,1.0);\n    } else {\n      uv = vec2(1.0,1.0);\n    }\n    vec2 pos = vec2(\n      aObjCen.x + sin(aObjRot)*uEntityScale.y*(-0.5 + uv.y)\n      + cos(aObjRot)*uEntityScale.x*(-0.5 + uv.x),\n      aObjCen.y + cos(aObjRot)*uEntityScale.y*(-0.5 + uv.y)\n      - sin(aObjRot)*uEntityScale.x*(-0.5 + uv.x)\n    );\n    gl_Position = vec4(\n      -1.0 + 2.0*pos.x/uScale.x,\n      1.0 - 2.0*pos.y/uScale.y,\n      0.0, 1.0\n    );\n  }\n\n",
+      "start": 90,
+      "end": 857,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 25
+        },
+        "end": {
+          "line": 39,
+          "column": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "`",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 857,
+      "end": 858,
+      "loc": {
+        "start": {
+          "line": 39,
+          "column": 0
+        },
+        "end": {
+          "line": 39,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 858,
+      "end": 859,
+      "loc": {
+        "start": {
+          "line": 39,
+          "column": 1
+        },
+        "end": {
+          "line": 39,
+          "column": 2
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 861,
+      "end": 867,
+      "loc": {
+        "start": {
+          "line": 41,
+          "column": 0
+        },
+        "end": {
+          "line": 41,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 868,
+      "end": 873,
+      "loc": {
+        "start": {
+          "line": 41,
+          "column": 7
+        },
+        "end": {
+          "line": 41,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "spritefs",
+      "start": 874,
+      "end": 882,
+      "loc": {
+        "start": {
+          "line": 41,
+          "column": 13
+        },
+        "end": {
+          "line": 41,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 883,
+      "end": 884,
+      "loc": {
+        "start": {
+          "line": 41,
+          "column": 22
+        },
+        "end": {
+          "line": 41,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "`",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 885,
+      "end": 886,
+      "loc": {
+        "start": {
+          "line": 41,
+          "column": 24
+        },
+        "end": {
+          "line": 41,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "template",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "\n\n  precision lowp float;\n\n  #define STEP_A 0.4\n  #define STEP_B 0.6\n  #define STEP_C 0.8\n  #define STEP_D 1.0\n\n  uniform sampler2D u_texture0;\n  uniform sampler2D u_normals;\n\n  varying vec2 uv;\n\n  uniform vec4 AmbientColor;\n  uniform vec2 Resolution;\n\n  uniform float Opacity;\n\n  uniform float LightSize;\n  uniform bool SoftLight;\n  uniform vec3 LightPos;\n  uniform vec4 LightColor;\n  uniform vec3 Falloff;\n\n  void main() {\n\n    vec3 Sum = vec3(0.0);\n\n    vec4 DiffuseColor = texture2D(u_texture0, uv);\n\n    vec3 NormalMap = texture2D(u_normals, uv).rgb;\n\n    vec3 LightDir = vec3(LightPos.xy - (gl_FragCoord.xy / Resolution.xy), LightPos.z);\n\n    LightDir.x /= (LightSize / Resolution.x);\n    LightDir.y /= (LightSize / Resolution.y);\n\n    float D = length(LightDir);\n\n    vec3 N = normalize(NormalMap * 2.0 - 1.0);\n    vec3 L = normalize(LightDir);\n\n    N = mix(N, vec3(0), 0.5);\n\n    float df = max(dot(N, L), 0.0);\n\n    vec3 Diffuse = (LightColor.rgb * LightColor.a) * df;\n\n    vec3 Ambient = AmbientColor.rgb * AmbientColor.a;\n\n    float Attenuation = 1.0 / ( Falloff.x + (Falloff.y*D) + (Falloff.z*D*D) );\n\n    if (SoftLight == false) {\n      if (Attenuation < STEP_A) Attenuation = 0.0;\n      else if (Attenuation < STEP_B) Attenuation = STEP_B;\n      else if (Attenuation < STEP_C) Attenuation = STEP_C;\n      else Attenuation = STEP_D;\n    }\n\n    vec3 Intensity = Ambient + Diffuse * Attenuation;\n    vec3 FinalColor = DiffuseColor.rgb * Intensity;\n\n    Sum += FinalColor;\n\n    if (SoftLight == false) {\n      gl_FragColor = vec4(Sum, DiffuseColor.a * Opacity);\n    } else {\n      gl_FragColor = vec4(FinalColor, DiffuseColor.a * Opacity);\n    }\n\n    if (gl_FragColor.a < 0.1) discard;\n\n  }\n\n",
+      "start": 886,
+      "end": 2588,
+      "loc": {
+        "start": {
+          "line": 41,
+          "column": 25
+        },
+        "end": {
+          "line": 116,
+          "column": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "`",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2588,
+      "end": 2589,
+      "loc": {
+        "start": {
+          "line": 116,
+          "column": 0
+        },
+        "end": {
+          "line": 116,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 2589,
+      "end": 2590,
+      "loc": {
+        "start": {
+          "line": 116,
+          "column": 1
+        },
+        "end": {
+          "line": 116,
+          "column": 2
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 2592,
+      "end": 2598,
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 0
+        },
+        "end": {
+          "line": 118,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 2599,
+      "end": 2604,
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 7
+        },
+        "end": {
+          "line": 118,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "outlinefs",
+      "start": 2605,
+      "end": 2614,
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 13
+        },
+        "end": {
+          "line": 118,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 2615,
+      "end": 2616,
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 23
+        },
+        "end": {
+          "line": 118,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "`",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2617,
+      "end": 2618,
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 25
+        },
+        "end": {
+          "line": 118,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "template",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "\n\n  precision lowp float;\n\n  #define PI 3.14159265359\n  #define WIDTH 10.0\n  #define COLOR vec4(0.0,0.0,0.0,1.0)\n  #define NUM_FRAMES 6.0\n\n  uniform sampler2D u_texture0;\n\n  varying vec2 uv;\n  uniform vec2 uScale;\n  uniform vec2 uEntityScale;\n\n  void main() {\n\n    vec2 point = vec2( (WIDTH/uEntityScale.x)*cos(PI), (WIDTH/uEntityScale.y)*sin(PI));\n    point = clamp(uv + point, vec2(0.0), vec4(uEntityScale.xy, uEntityScale.xy).zw );\n    float sampledAlpha = texture2D(u_texture0,  point).a;\n    float outlineAlpha = max(0.0, sampledAlpha);\n\n    gl_FragColor = mix(vec4(0.0), COLOR, outlineAlpha);\n\n    vec4 tex0 = texture2D(u_texture0, uv);\n    gl_FragColor = mix(gl_FragColor, tex0, tex0.a);\n\n    if (gl_FragColor.a < 0.5) discard;\n\n  }\n\n",
+      "start": 2618,
+      "end": 3359,
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 26
+        },
+        "end": {
+          "line": 149,
+          "column": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "`",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 3359,
+      "end": 3360,
+      "loc": {
+        "start": {
+          "line": 149,
+          "column": 0
+        },
+        "end": {
+          "line": 149,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 3360,
+      "end": 3361,
+      "loc": {
+        "start": {
+          "line": 149,
+          "column": 1
+        },
+        "end": {
+          "line": 149,
+          "column": 2
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 3361,
+      "end": 3361,
+      "loc": {
+        "start": {
+          "line": 149,
+          "column": 2
+        },
+        "end": {
+          "line": 149,
+          "column": 2
+        }
+      }
+    }
+  ]
+}

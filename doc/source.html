@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="">
+  <title data-ice="title">Source | API Document</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Math.js~Mathematical.html">Mathematical</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-BGM">BGM</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-BGS">BGS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-BROWSERS">BROWSERS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CANVAS">CANVAS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CONNECTION_PORT">CONNECTION_PORT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CONNECTION_URL">CONNECTION_URL</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ColorPalette">ColorPalette</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DEBUG_FPS">DEBUG_FPS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DEBUG_MODE">DEBUG_MODE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DEFAULT_LANG">DEFAULT_LANG</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DEV_MODE">DEV_MODE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DIMENSION">DIMENSION</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DISPLAY_SHADOWS">DISPLAY_SHADOWS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DOWN">DOWN</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EASING_CAMERA">EASING_CAMERA</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EDIT_MODE">EDIT_MODE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FREE_CAMERA">FREE_CAMERA</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-GOD_MODE">GOD_MODE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-GRAVITY">GRAVITY</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-GRID_WIDTH">GRID_WIDTH</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-IS_CLIENT">IS_CLIENT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-LEFT">LEFT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-LOCAL_PLAYER">LOCAL_PLAYER</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-MAX_SCALE">MAX_SCALE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-MINI_MAP">MINI_MAP</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-MIN_SCALE">MIN_SCALE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-OFFLINE_MODE">OFFLINE_MODE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-PIXEL_SCALE">PIXEL_SCALE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RECORD_MODE">RECORD_MODE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RENDER_MODE">RENDER_MODE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RIGHT">RIGHT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SHADOW_ALPHA">SHADOW_ALPHA</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SHADOW_X">SHADOW_X</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SHADOW_Y">SHADOW_Y</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-TILESET_MODE">TILESET_MODE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-TYPES">TYPES</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-UP">UP</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-VERSION">VERSION</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-VOLUME">VOLUME</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-WALK_BY_KEYBOARD">WALK_BY_KEYBOARD</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-WGL">WGL</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-WGL_SUPPORT">WGL_SUPPORT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Y_DEPTH_HACK">Y_DEPTH_HACK</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/index.js~Engine.html">Engine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-float">float</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isRenderable">isRenderable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-logic">logic</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-orbit">orbit</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-updateEntity">updateEntity</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-updateNotification">updateNotification</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-updateEntityNoise">updateEntityNoise</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Audio</div><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Audio">Audio</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Camera</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Camera/index.js~Camera.html">Camera</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Commander</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Commander/index.js~Commander.html">Commander</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Connection</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Connection/index.js~Connection.html">Connection</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Controller</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Controller/index.js~Controller.html">Controller</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-actions">actions</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/DisplayObject</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/DisplayObject/index.js~DisplayObject.html">DisplayObject</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Editor</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Editor/index.js~Editor.html">Editor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderEditorMode">renderEditorMode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderEntityCollisionBox">renderEntityCollisionBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderEntityNoise">renderEntityNoise</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderEntitySelection">renderEntitySelection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderSelectedEntities">renderSelectedEntities</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderSelection">renderSelection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderSelectionText">renderSelectionText</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clickedInsideTileset">clickedInsideTileset</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-selectTile">selectTile</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-updateTilesetPosition">updateTilesetPosition</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-commands">commands</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Entity</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Entity/index.js~Entity.html">Entity</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-addEntity">addEntity</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-cloneEntity">cloneEntity</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getEntityById">getEntityById</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getEntityByProperty">getEntityByProperty</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeEntity">removeEntity</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeEntityById">removeEntityById</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeEntityFromArray">removeEntityFromArray</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Environment</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Environment/index.js~Environment.html">Environment</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Environment/Evaluator</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Environment/Evaluator/index.js~Evaluator.html">Evaluator</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Environment/Parser</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Environment/Parser/NodeList.js~NODE_LIST.html">NODE_LIST</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Environment/Parser/index.js~Parser.html">Parser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseBase">parseBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseExpression">parseExpression</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseMemberExpression">parseMemberExpression</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseUnary">parseUnary</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isSet">isSet</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseArguments">parseArguments</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseAssignmentExpression">parseAssignmentExpression</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseAsyncStatement">parseAsyncStatement</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseBlock">parseBlock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseBlockStatement">parseBlockStatement</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseBraceBody">parseBraceBody</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseCallExpression">parseCallExpression</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseIdentifierRoute">parseIdentifierRoute</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseIfStatement">parseIfStatement</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseParentheseExpression">parseParentheseExpression</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseReturnStatement">parseReturnStatement</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-NODE_TYPES">NODE_TYPES</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-precedence">precedence</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Environment/Tester</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Environment/Tester/index.js~Tester.html">Tester</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Mathematical">Mathematical</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Environment/Tokenizer</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Environment/Tokenizer/index.js~Tokenizer.html">Tokenizer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-IGNORE">IGNORE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-TOKENS">TOKENS</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Input</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Input/Keyboard.js~Keyboard.html">Keyboard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Input/Mouse.js~Mouse.html">Mouse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Input/index.js~Input.html">Input</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Language</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Language/index.js~Language.html">Language</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Map</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Map/MapEntity.js~MapEntity.html">MapEntity</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Map/index.js~Map.html">Map</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-actionTrigger">actionTrigger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-collidesWithCollisionBox">collidesWithCollisionBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isEntityCollidable">isEntityCollidable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isObstacle">isObstacle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-triggerEvent">triggerEvent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-addMap">addMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-distance">distance</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/MiniMap</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/MiniMap/index.js~MiniMap.html">MiniMap</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Notification</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Notification/index.js~Notification.html">Notification</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Path</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Path/index.js~Path.html">Path</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Renderer</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Renderer/index.js~Renderer.html">Renderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderDebugScene">renderDebugScene</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-drawGrid">drawGrid</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clear">clear</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-draw">draw</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-drawPixelText">drawPixelText</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-drawTileset">drawTileset</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-entityInSelectionRange">entityInSelectionRange</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getAnimationFrame">getAnimationFrame</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-render">render</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderEntities">renderEntities</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderEntity">renderEntity</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderMap">renderMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderShadow">renderShadow</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-updateEntitySpriteFrame">updateEntitySpriteFrame</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Renderer/webgl</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Renderer/webgl/index.js~WGL_Renderer.html">WGL_Renderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-outlinefs">outlinefs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-spritefs">spritefs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-spritevs">spritevs</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Shadow</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Shadow/index.js~Shadow.html">Shadow</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/Texture</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Engine/Texture/index.js~Texture.html">Texture</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-colorizePixels">colorizePixels</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-drawTimeLightning">drawTimeLightning</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Engine/utils</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ajax">ajax</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-antiCache">antiCache</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-canvasToImage">canvasToImage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createCanvasBuffer">createCanvasBuffer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getLocalHost">getLocalHost</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPath">getPath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getSprite">getSprite</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getTime">getTime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getWGLContext">getWGLContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-imageToCanvas">imageToCanvas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-inherit">inherit</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseString">parseString</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-supportWGL">supportWGL</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tileContainsImageData">tileContainsImageData</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-uHash">uHash</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Maps">Maps</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-TextureCache">TextureCache</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Game</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Game/index.js~Game.html">Game</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-global">global</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-keys">keys</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-mouse">mouse</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Game/entities</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Game/entities/Monster.js~Monster.html">Monster</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Game/entities/Light</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Game/entities/Light/index.js~Light.html">Light</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Game/entities/Player</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Game/entities/Player/index.js~Player.html">Player</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-changeFacing">changeFacing</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-follow">follow</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-jump">jump</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-jumping">jumping</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-playStateSound">playStateSound</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-bump">bump</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-halfStep">halfStep</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-move">move</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onlineMove">onlineMove</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-skipBump">skipBump</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-startMoving">startMoving</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-stopMoving">stopMoving</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-walk">walk</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-walkTo">walkTo</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Game/entities/Player/new</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Game/entities/Player/new/index.js~Player.html">Player</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-changeFacing">changeFacing</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-jump">jump</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-jumpAnimation">jumpAnimation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-jumping">jumping</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-playStateSound">playStateSound</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-bumpAnimation">bumpAnimation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-halfStep">halfStep</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-move">move</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-moveAnimation">moveAnimation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-stopMoving">stopMoving</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Packets</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Packets/Facing.js~Facing.html">Facing</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Packets/Jumping.js~Jumping.html">Jumping</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Packets/Position.js~Position.html">Position</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Packets/Velocity.js~Velocity.html">Velocity</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1>Source <img data-ice="coverageBadge" src="./badge.svg"><span data-ice="totalCoverageCount" class="total-coverage-count">821/946</span></h1>
+
+<table class="files-summary" data-ice="files" data-use-coverage="true">
+  <thead>
+    <tr>
+      <td>File</td>
+      <td>Identifier</td>
+      <td class="coverage">Document</td>
+      <td style="display: none;">Size</td>
+      <td style="display: none;">Lines</td>
+      <td style="display: none;">Updated</td>
+    </tr>
+  </thead>
+  <tbody>
+    
+  <tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Audio/index.js.html#errorLines=91">src/Engine/Audio/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-Audio">Audio</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
+      <td style="display: none;" data-ice="size">1616 byte</td>
+      <td style="display: none;" data-ice="lines">90</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Camera/index.js.html#errorLines=139,140,183,240,241,40">src/Engine/Camera/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Camera/index.js~Camera.html">Camera</a></span></td>
+      <td class="coverage"><span data-ice="coverage">80 %</span><span data-ice="coverageCount" class="coverage-count">24/30</span></td>
+      <td style="display: none;" data-ice="size">6667 byte</td>
+      <td style="display: none;" data-ice="lines">339</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Commander/index.js.html">src/Engine/Commander/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Commander/index.js~Commander.html">Commander</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">11/11</span></td>
+      <td style="display: none;" data-ice="size">1618 byte</td>
+      <td style="display: none;" data-ice="lines">109</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Connection/index.js.html#errorLines=290">src/Engine/Connection/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Connection/index.js~Connection.html">Connection</a></span></td>
+      <td class="coverage"><span data-ice="coverage">94 %</span><span data-ice="coverageCount" class="coverage-count">16/17</span></td>
+      <td style="display: none;" data-ice="size">5995 byte</td>
+      <td style="display: none;" data-ice="lines">307</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Controller/actions.js.html#errorLines=3">src/Engine/Controller/actions.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-actions">actions</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
+      <td style="display: none;" data-ice="size">7696 byte</td>
+      <td style="display: none;" data-ice="lines">325</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Controller/index.js.html">src/Engine/Controller/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Controller/index.js~Controller.html">Controller</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">8/8</span></td>
+      <td style="display: none;" data-ice="size">1190 byte</td>
+      <td style="display: none;" data-ice="lines">77</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/DisplayObject/index.js.html">src/Engine/DisplayObject/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/DisplayObject/index.js~DisplayObject.html">DisplayObject</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">6/6</span></td>
+      <td style="display: none;" data-ice="size">2041 byte</td>
+      <td style="display: none;" data-ice="lines">117</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Editor/commands.js.html#errorLines=6">src/Engine/Editor/commands.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-commands">commands</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
+      <td style="display: none;" data-ice="size">2145 byte</td>
+      <td style="display: none;" data-ice="lines">97</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Editor/index.js.html#errorLines=252,82">src/Engine/Editor/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Editor/index.js~Editor.html">Editor</a></span></td>
+      <td class="coverage"><span data-ice="coverage">92 %</span><span data-ice="coverageCount" class="coverage-count">26/28</span></td>
+      <td style="display: none;" data-ice="size">7781 byte</td>
+      <td style="display: none;" data-ice="lines">422</td>
+      <td style="display: none;" data-ice="updated">2017-05-02 10:37:17 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Editor/render.js.html">src/Engine/Editor/render.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-renderEditorMode">renderEditorMode</a></span>
+<span><a href="function/index.html#static-function-renderEntityCollisionBox">renderEntityCollisionBox</a></span>
+<span><a href="function/index.html#static-function-renderEntityNoise">renderEntityNoise</a></span>
+<span><a href="function/index.html#static-function-renderEntitySelection">renderEntitySelection</a></span>
+<span><a href="function/index.html#static-function-renderSelectedEntities">renderSelectedEntities</a></span>
+<span><a href="function/index.html#static-function-renderSelection">renderSelection</a></span>
+<span><a href="function/index.html#static-function-renderSelectionText">renderSelectionText</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">7/7</span></td>
+      <td style="display: none;" data-ice="size">5733 byte</td>
+      <td style="display: none;" data-ice="lines">287</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Editor/tileset.js.html#errorLines=11">src/Engine/Editor/tileset.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-clickedInsideTileset">clickedInsideTileset</a></span>
+<span><a href="function/index.html#static-function-selectTile">selectTile</a></span>
+<span><a href="function/index.html#static-function-updateTilesetPosition">updateTilesetPosition</a></span></td>
+      <td class="coverage"><span data-ice="coverage">66 %</span><span data-ice="coverageCount" class="coverage-count">2/3</span></td>
+      <td style="display: none;" data-ice="size">974 byte</td>
+      <td style="display: none;" data-ice="lines">42</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Entity/functions.js.html">src/Engine/Entity/functions.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-addEntity">addEntity</a></span>
+<span><a href="function/index.html#static-function-cloneEntity">cloneEntity</a></span>
+<span><a href="function/index.html#static-function-getEntityById">getEntityById</a></span>
+<span><a href="function/index.html#static-function-getEntityByProperty">getEntityByProperty</a></span>
+<span><a href="function/index.html#static-function-removeEntity">removeEntity</a></span>
+<span><a href="function/index.html#static-function-removeEntityById">removeEntityById</a></span>
+<span><a href="function/index.html#static-function-removeEntityFromArray">removeEntityFromArray</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">7/7</span></td>
+      <td style="display: none;" data-ice="size">3800 byte</td>
+      <td style="display: none;" data-ice="lines">202</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Entity/index.js.html#errorLines=258,265,272,273,274,341,580,644,741,757">src/Engine/Entity/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Entity/index.js~Entity.html">Entity</a></span></td>
+      <td class="coverage"><span data-ice="coverage">89 %</span><span data-ice="coverageCount" class="coverage-count">82/92</span></td>
+      <td style="display: none;" data-ice="size">16407 byte</td>
+      <td style="display: none;" data-ice="lines">889</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Environment/Evaluator/index.js.html">src/Engine/Environment/Evaluator/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Environment/Evaluator/index.js~Evaluator.html">Evaluator</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">24/24</span></td>
+      <td style="display: none;" data-ice="size">10678 byte</td>
+      <td style="display: none;" data-ice="lines">551</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Environment/Parser/NodeList.js.html#errorLines=111,123,134,146,158,27,29,40,51,62,74,85,98">src/Engine/Environment/Parser/NodeList.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Environment/Parser/NodeList.js~NODE_LIST.html">NODE_LIST</a></span>
+<span><a href="variable/index.html#static-variable-NODE_TYPES">NODE_TYPES</a></span></td>
+      <td class="coverage"><span data-ice="coverage">13 %</span><span data-ice="coverageCount" class="coverage-count">2/15</span></td>
+      <td style="display: none;" data-ice="size">3189 byte</td>
+      <td style="display: none;" data-ice="lines">170</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Environment/Parser/expression.js.html">src/Engine/Environment/Parser/expression.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-parseBase">parseBase</a></span>
+<span><a href="function/index.html#static-function-parseExpression">parseExpression</a></span>
+<span><a href="function/index.html#static-function-parseMemberExpression">parseMemberExpression</a></span>
+<span><a href="function/index.html#static-function-parseUnary">parseUnary</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">4/4</span></td>
+      <td style="display: none;" data-ice="size">3167 byte</td>
+      <td style="display: none;" data-ice="lines">156</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Environment/Parser/index.js.html">src/Engine/Environment/Parser/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Environment/Parser/index.js~Parser.html">Parser</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">10/10</span></td>
+      <td style="display: none;" data-ice="size">2029 byte</td>
+      <td style="display: none;" data-ice="lines">130</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Environment/Parser/parse.js.html">src/Engine/Environment/Parser/parse.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-isSet">isSet</a></span>
+<span><a href="function/index.html#static-function-parseArguments">parseArguments</a></span>
+<span><a href="function/index.html#static-function-parseAssignmentExpression">parseAssignmentExpression</a></span>
+<span><a href="function/index.html#static-function-parseAsyncStatement">parseAsyncStatement</a></span>
+<span><a href="function/index.html#static-function-parseBlock">parseBlock</a></span>
+<span><a href="function/index.html#static-function-parseBlockStatement">parseBlockStatement</a></span>
+<span><a href="function/index.html#static-function-parseBraceBody">parseBraceBody</a></span>
+<span><a href="function/index.html#static-function-parseCallExpression">parseCallExpression</a></span>
+<span><a href="function/index.html#static-function-parseIdentifierRoute">parseIdentifierRoute</a></span>
+<span><a href="function/index.html#static-function-parseIfStatement">parseIfStatement</a></span>
+<span><a href="function/index.html#static-function-parseParentheseExpression">parseParentheseExpression</a></span>
+<span><a href="function/index.html#static-function-parseReturnStatement">parseReturnStatement</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">12/12</span></td>
+      <td style="display: none;" data-ice="size">4388 byte</td>
+      <td style="display: none;" data-ice="lines">269</td>
+      <td style="display: none;" data-ice="updated">2017-05-01 10:06:53 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Environment/Parser/precedence.js.html#errorLines=1">src/Engine/Environment/Parser/precedence.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-precedence">precedence</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
+      <td style="display: none;" data-ice="size">136 byte</td>
+      <td style="display: none;" data-ice="lines">7</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Environment/Tester/index.js.html">src/Engine/Environment/Tester/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Environment/Tester/index.js~Tester.html">Tester</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">7/7</span></td>
+      <td style="display: none;" data-ice="size">1751 byte</td>
+      <td style="display: none;" data-ice="lines">91</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Environment/Tester/tests.js.html">src/Engine/Environment/Tester/tests.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-Mathematical">Mathematical</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">2867 byte</td>
+      <td style="display: none;" data-ice="lines">185</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Environment/Tokenizer/index.js.html#errorLines=193,250,252">src/Engine/Environment/Tokenizer/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Environment/Tokenizer/index.js~Tokenizer.html">Tokenizer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">85 %</span><span data-ice="coverageCount" class="coverage-count">17/20</span></td>
+      <td style="display: none;" data-ice="size">5001 byte</td>
+      <td style="display: none;" data-ice="lines">289</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Environment/Tokenizer/tokens.js.html">src/Engine/Environment/Tokenizer/tokens.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-IGNORE">IGNORE</a></span>
+<span><a href="variable/index.html#static-variable-TOKENS">TOKENS</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">2/2</span></td>
+      <td style="display: none;" data-ice="size">1280 byte</td>
+      <td style="display: none;" data-ice="lines">76</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Environment/index.js.html">src/Engine/Environment/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Environment/index.js~Environment.html">Environment</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">9/9</span></td>
+      <td style="display: none;" data-ice="size">1547 byte</td>
+      <td style="display: none;" data-ice="lines">88</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Input/Keyboard.js.html">src/Engine/Input/Keyboard.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Input/Keyboard.js~Keyboard.html">Keyboard</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">117/117</span></td>
+      <td style="display: none;" data-ice="size">19525 byte</td>
+      <td style="display: none;" data-ice="lines">1247</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Input/Mouse.js.html">src/Engine/Input/Mouse.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Input/Mouse.js~Mouse.html">Mouse</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">3/3</span></td>
+      <td style="display: none;" data-ice="size">623 byte</td>
+      <td style="display: none;" data-ice="lines">41</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Input/index.js.html#errorLines=16,18,20,21">src/Engine/Input/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Input/index.js~Input.html">Input</a></span></td>
+      <td class="coverage"><span data-ice="coverage">60 %</span><span data-ice="coverageCount" class="coverage-count">6/10</span></td>
+      <td style="display: none;" data-ice="size">1422 byte</td>
+      <td style="display: none;" data-ice="lines">81</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Language/index.js.html">src/Engine/Language/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Language/index.js~Language.html">Language</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">10/10</span></td>
+      <td style="display: none;" data-ice="size">2511 byte</td>
+      <td style="display: none;" data-ice="lines">139</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Map/MapEntity.js.html#errorLines=20,22,24,26,28,30,32,34,37">src/Engine/Map/MapEntity.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Map/MapEntity.js~MapEntity.html">MapEntity</a></span></td>
+      <td class="coverage"><span data-ice="coverage">25 %</span><span data-ice="coverageCount" class="coverage-count">3/12</span></td>
+      <td style="display: none;" data-ice="size">829 byte</td>
+      <td style="display: none;" data-ice="lines">51</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Map/events.js.html">src/Engine/Map/events.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-actionTrigger">actionTrigger</a></span>
+<span><a href="function/index.html#static-function-collidesWithCollisionBox">collidesWithCollisionBox</a></span>
+<span><a href="function/index.html#static-function-isEntityCollidable">isEntityCollidable</a></span>
+<span><a href="function/index.html#static-function-isObstacle">isObstacle</a></span>
+<span><a href="function/index.html#static-function-triggerEvent">triggerEvent</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">5/5</span></td>
+      <td style="display: none;" data-ice="size">4435 byte</td>
+      <td style="display: none;" data-ice="lines">200</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Map/functions.js.html">src/Engine/Map/functions.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-addMap">addMap</a></span>
+<span><a href="function/index.html#static-function-distance">distance</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">2/2</span></td>
+      <td style="display: none;" data-ice="size">1504 byte</td>
+      <td style="display: none;" data-ice="lines">66</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Map/index.js.html#errorLines=136,137,153,74">src/Engine/Map/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Map/index.js~Map.html">Map</a></span></td>
+      <td class="coverage"><span data-ice="coverage">87 %</span><span data-ice="coverageCount" class="coverage-count">28/32</span></td>
+      <td style="display: none;" data-ice="size">6971 byte</td>
+      <td style="display: none;" data-ice="lines">384</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/MiniMap/index.js.html#errorLines=89,91,93">src/Engine/MiniMap/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/MiniMap/index.js~MiniMap.html">MiniMap</a></span></td>
+      <td class="coverage"><span data-ice="coverage">86 %</span><span data-ice="coverageCount" class="coverage-count">19/22</span></td>
+      <td style="display: none;" data-ice="size">6101 byte</td>
+      <td style="display: none;" data-ice="lines">326</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Notification/index.js.html#errorLines=131,163,165,167,169,173,178,229,268,286">src/Engine/Notification/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Notification/index.js~Notification.html">Notification</a></span></td>
+      <td class="coverage"><span data-ice="coverage">76 %</span><span data-ice="coverageCount" class="coverage-count">32/42</span></td>
+      <td style="display: none;" data-ice="size">7427 byte</td>
+      <td style="display: none;" data-ice="lines">408</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Path/index.js.html">src/Engine/Path/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Path/index.js~Path.html">Path</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">5/5</span></td>
+      <td style="display: none;" data-ice="size">857 byte</td>
+      <td style="display: none;" data-ice="lines">53</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Renderer/debug.js.html">src/Engine/Renderer/debug.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-renderDebugScene">renderDebugScene</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">2703 byte</td>
+      <td style="display: none;" data-ice="lines">131</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Renderer/grid.js.html">src/Engine/Renderer/grid.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-drawGrid">drawGrid</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">793 byte</td>
+      <td style="display: none;" data-ice="lines">41</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Renderer/index.js.html">src/Engine/Renderer/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Renderer/index.js~Renderer.html">Renderer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">23/23</span></td>
+      <td style="display: none;" data-ice="size">4021 byte</td>
+      <td style="display: none;" data-ice="lines">230</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Renderer/render.js.html">src/Engine/Renderer/render.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-clear">clear</a></span>
+<span><a href="function/index.html#static-function-draw">draw</a></span>
+<span><a href="function/index.html#static-function-drawPixelText">drawPixelText</a></span>
+<span><a href="function/index.html#static-function-drawTileset">drawTileset</a></span>
+<span><a href="function/index.html#static-function-entityInSelectionRange">entityInSelectionRange</a></span>
+<span><a href="function/index.html#static-function-getAnimationFrame">getAnimationFrame</a></span>
+<span><a href="function/index.html#static-function-render">render</a></span>
+<span><a href="function/index.html#static-function-renderEntities">renderEntities</a></span>
+<span><a href="function/index.html#static-function-renderEntity">renderEntity</a></span>
+<span><a href="function/index.html#static-function-renderMap">renderMap</a></span>
+<span><a href="function/index.html#static-function-renderShadow">renderShadow</a></span>
+<span><a href="function/index.html#static-function-updateEntitySpriteFrame">updateEntitySpriteFrame</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">12/12</span></td>
+      <td style="display: none;" data-ice="size">8585 byte</td>
+      <td style="display: none;" data-ice="lines">403</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Renderer/webgl/index.js.html#errorLines=131,133,139,44,70,72,73,74,75,77,78,80,82">src/Engine/Renderer/webgl/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Renderer/webgl/index.js~WGL_Renderer.html">WGL_Renderer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">61 %</span><span data-ice="coverageCount" class="coverage-count">21/34</span></td>
+      <td style="display: none;" data-ice="size">11482 byte</td>
+      <td style="display: none;" data-ice="lines">500</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Renderer/webgl/shaders.js.html#errorLines=118,41">src/Engine/Renderer/webgl/shaders.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-outlinefs">outlinefs</a></span>
+<span><a href="variable/index.html#static-variable-spritefs">spritefs</a></span>
+<span><a href="variable/index.html#static-variable-spritevs">spritevs</a></span></td>
+      <td class="coverage"><span data-ice="coverage">33 %</span><span data-ice="coverageCount" class="coverage-count">1/3</span></td>
+      <td style="display: none;" data-ice="size">3361 byte</td>
+      <td style="display: none;" data-ice="lines">148</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Shadow/index.js.html">src/Engine/Shadow/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Shadow/index.js~Shadow.html">Shadow</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">10/10</span></td>
+      <td style="display: none;" data-ice="size">2536 byte</td>
+      <td style="display: none;" data-ice="lines">163</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Texture/effects.js.html">src/Engine/Texture/effects.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-colorizePixels">colorizePixels</a></span>
+<span><a href="function/index.html#static-function-drawTimeLightning">drawTimeLightning</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">2/2</span></td>
+      <td style="display: none;" data-ice="size">1517 byte</td>
+      <td style="display: none;" data-ice="lines">82</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/Texture/index.js.html">src/Engine/Texture/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/Texture/index.js~Texture.html">Texture</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">18/18</span></td>
+      <td style="display: none;" data-ice="size">4087 byte</td>
+      <td style="display: none;" data-ice="lines">235</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/index.js.html">src/Engine/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Engine/index.js~Engine.html">Engine</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">32/32</span></td>
+      <td style="display: none;" data-ice="size">7776 byte</td>
+      <td style="display: none;" data-ice="lines">427</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/logic.js.html">src/Engine/logic.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-float">float</a></span>
+<span><a href="function/index.html#static-function-isRenderable">isRenderable</a></span>
+<span><a href="function/index.html#static-function-logic">logic</a></span>
+<span><a href="function/index.html#static-function-orbit">orbit</a></span>
+<span><a href="function/index.html#static-function-updateEntity">updateEntity</a></span>
+<span><a href="function/index.html#static-function-updateNotification">updateNotification</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">6/6</span></td>
+      <td style="display: none;" data-ice="size">3862 byte</td>
+      <td style="display: none;" data-ice="lines">190</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/sound.js.html">src/Engine/sound.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-updateEntityNoise">updateEntityNoise</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">1802 byte</td>
+      <td style="display: none;" data-ice="lines">71</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Engine/utils/index.js.html">src/Engine/utils/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-Maps">Maps</a></span>
+<span><a href="variable/index.html#static-variable-TextureCache">TextureCache</a></span>
+<span><a href="function/index.html#static-function-ajax">ajax</a></span>
+<span><a href="function/index.html#static-function-antiCache">antiCache</a></span>
+<span><a href="function/index.html#static-function-canvasToImage">canvasToImage</a></span>
+<span><a href="function/index.html#static-function-createCanvasBuffer">createCanvasBuffer</a></span>
+<span><a href="function/index.html#static-function-getLocalHost">getLocalHost</a></span>
+<span><a href="function/index.html#static-function-getPath">getPath</a></span>
+<span><a href="function/index.html#static-function-getSprite">getSprite</a></span>
+<span><a href="function/index.html#static-function-getTime">getTime</a></span>
+<span><a href="function/index.html#static-function-getWGLContext">getWGLContext</a></span>
+<span><a href="function/index.html#static-function-imageToCanvas">imageToCanvas</a></span>
+<span><a href="function/index.html#static-function-inherit">inherit</a></span>
+<span><a href="function/index.html#static-function-parseString">parseString</a></span>
+<span><a href="function/index.html#static-function-supportWGL">supportWGL</a></span>
+<span><a href="function/index.html#static-function-tileContainsImageData">tileContainsImageData</a></span>
+<span><a href="function/index.html#static-function-uHash">uHash</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">17/17</span></td>
+      <td style="display: none;" data-ice="size">4808 byte</td>
+      <td style="display: none;" data-ice="lines">291</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Game/entities/Light/index.js.html#errorLines=16,26,28,30,32,34,36,38,42,44,46">src/Game/entities/Light/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Game/entities/Light/index.js~Light.html">Light</a></span></td>
+      <td class="coverage"><span data-ice="coverage">15 %</span><span data-ice="coverageCount" class="coverage-count">2/13</span></td>
+      <td style="display: none;" data-ice="size">1051 byte</td>
+      <td style="display: none;" data-ice="lines">61</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Game/entities/Monster.js.html#errorLines=14,3">src/Game/entities/Monster.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Game/entities/Monster.js~Monster.html">Monster</a></span></td>
+      <td class="coverage"><span data-ice="coverage">33 %</span><span data-ice="coverageCount" class="coverage-count">1/3</span></td>
+      <td style="display: none;" data-ice="size">232 byte</td>
+      <td style="display: none;" data-ice="lines">15</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Game/entities/Player/face.js.html">src/Game/entities/Player/face.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-changeFacing">changeFacing</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">836 byte</td>
+      <td style="display: none;" data-ice="lines">40</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Game/entities/Player/follow.js.html">src/Game/entities/Player/follow.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-follow">follow</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">551 byte</td>
+      <td style="display: none;" data-ice="lines">29</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Game/entities/Player/index.js.html#errorLines=139,140,146,147,22,279,314,71">src/Game/entities/Player/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Game/entities/Player/index.js~Player.html">Player</a></span></td>
+      <td class="coverage"><span data-ice="coverage">78 %</span><span data-ice="coverageCount" class="coverage-count">30/38</span></td>
+      <td style="display: none;" data-ice="size">6300 byte</td>
+      <td style="display: none;" data-ice="lines">338</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Game/entities/Player/jump.js.html">src/Game/entities/Player/jump.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-jump">jump</a></span>
+<span><a href="function/index.html#static-function-jumping">jumping</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">2/2</span></td>
+      <td style="display: none;" data-ice="size">1302 byte</td>
+      <td style="display: none;" data-ice="lines">76</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Game/entities/Player/new/face.js.html">src/Game/entities/Player/new/face.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-changeFacing">changeFacing</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">836 byte</td>
+      <td style="display: none;" data-ice="lines">40</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Game/entities/Player/new/index.js.html#errorLines=137,138,144,145,20,247,69">src/Game/entities/Player/new/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Game/entities/Player/new/index.js~Player.html">Player</a></span></td>
+      <td class="coverage"><span data-ice="coverage">80 %</span><span data-ice="coverageCount" class="coverage-count">29/36</span></td>
+      <td style="display: none;" data-ice="size">5582 byte</td>
+      <td style="display: none;" data-ice="lines">301</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Game/entities/Player/new/jump.js.html#errorLines=10">src/Game/entities/Player/new/jump.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-jump">jump</a></span>
+<span><a href="function/index.html#static-function-jumpAnimation">jumpAnimation</a></span>
+<span><a href="function/index.html#static-function-jumping">jumping</a></span></td>
+      <td class="coverage"><span data-ice="coverage">66 %</span><span data-ice="coverageCount" class="coverage-count">2/3</span></td>
+      <td style="display: none;" data-ice="size">1267 byte</td>
+      <td style="display: none;" data-ice="lines">77</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Game/entities/Player/new/sound.js.html">src/Game/entities/Player/new/sound.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-playStateSound">playStateSound</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">998 byte</td>
+      <td style="display: none;" data-ice="lines">43</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Game/entities/Player/new/walk.js.html#errorLines=15">src/Game/entities/Player/new/walk.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-bumpAnimation">bumpAnimation</a></span>
+<span><a href="function/index.html#static-function-halfStep">halfStep</a></span>
+<span><a href="function/index.html#static-function-move">move</a></span>
+<span><a href="function/index.html#static-function-moveAnimation">moveAnimation</a></span>
+<span><a href="function/index.html#static-function-stopMoving">stopMoving</a></span></td>
+      <td class="coverage"><span data-ice="coverage">80 %</span><span data-ice="coverageCount" class="coverage-count">4/5</span></td>
+      <td style="display: none;" data-ice="size">4073 byte</td>
+      <td style="display: none;" data-ice="lines">209</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Game/entities/Player/sound.js.html">src/Game/entities/Player/sound.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-playStateSound">playStateSound</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">1089 byte</td>
+      <td style="display: none;" data-ice="lines">48</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Game/entities/Player/walk.js.html#errorLines=107">src/Game/entities/Player/walk.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-bump">bump</a></span>
+<span><a href="function/index.html#static-function-halfStep">halfStep</a></span>
+<span><a href="function/index.html#static-function-move">move</a></span>
+<span><a href="function/index.html#static-function-onlineMove">onlineMove</a></span>
+<span><a href="function/index.html#static-function-skipBump">skipBump</a></span>
+<span><a href="function/index.html#static-function-startMoving">startMoving</a></span>
+<span><a href="function/index.html#static-function-stopMoving">stopMoving</a></span>
+<span><a href="function/index.html#static-function-walk">walk</a></span>
+<span><a href="function/index.html#static-function-walkTo">walkTo</a></span></td>
+      <td class="coverage"><span data-ice="coverage">88 %</span><span data-ice="coverageCount" class="coverage-count">8/9</span></td>
+      <td style="display: none;" data-ice="size">6789 byte</td>
+      <td style="display: none;" data-ice="lines">364</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Game/entities/index.js.html">src/Game/entities/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">105 byte</td>
+      <td style="display: none;" data-ice="lines">2</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Game/index.js.html#errorLines=27,28,30,32,67,85">src/Game/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Game/index.js~Game.html">Game</a></span></td>
+      <td class="coverage"><span data-ice="coverage">50 %</span><span data-ice="coverageCount" class="coverage-count">6/12</span></td>
+      <td style="display: none;" data-ice="size">5162 byte</td>
+      <td style="display: none;" data-ice="lines">207</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Game/input.js.html#errorLines=1,178,217">src/Game/input.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-global">global</a></span>
+<span><a href="variable/index.html#static-variable-keys">keys</a></span>
+<span><a href="variable/index.html#static-variable-mouse">mouse</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
+      <td style="display: none;" data-ice="size">3426 byte</td>
+      <td style="display: none;" data-ice="lines">223</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Math.js.html">src/Math.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Math.js~Mathematical.html">Mathematical</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">16/16</span></td>
+      <td style="display: none;" data-ice="size">6234 byte</td>
+      <td style="display: none;" data-ice="lines">356</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Packets/Facing.js.html">src/Packets/Facing.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Packets/Facing.js~Facing.html">Facing</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">5/5</span></td>
+      <td style="display: none;" data-ice="size">668 byte</td>
+      <td style="display: none;" data-ice="lines">48</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Packets/Jumping.js.html">src/Packets/Jumping.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Packets/Jumping.js~Jumping.html">Jumping</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">4/4</span></td>
+      <td style="display: none;" data-ice="size">525 byte</td>
+      <td style="display: none;" data-ice="lines">40</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Packets/Position.js.html">src/Packets/Position.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Packets/Position.js~Position.html">Position</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">7/7</span></td>
+      <td style="display: none;" data-ice="size">930 byte</td>
+      <td style="display: none;" data-ice="lines">64</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Packets/Velocity.js.html">src/Packets/Velocity.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/src/Packets/Velocity.js~Velocity.html">Velocity</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">5/5</span></td>
+      <td style="display: none;" data-ice="size">698 byte</td>
+      <td style="display: none;" data-ice="lines">48</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/Packets/index.js.html">src/Packets/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">152 byte</td>
+      <td style="display: none;" data-ice="lines">3</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/cfg.js.html">src/cfg.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-BGM">BGM</a></span>
+<span><a href="variable/index.html#static-variable-BGS">BGS</a></span>
+<span><a href="variable/index.html#static-variable-BROWSERS">BROWSERS</a></span>
+<span><a href="variable/index.html#static-variable-CANVAS">CANVAS</a></span>
+<span><a href="variable/index.html#static-variable-CONNECTION_PORT">CONNECTION_PORT</a></span>
+<span><a href="variable/index.html#static-variable-CONNECTION_URL">CONNECTION_URL</a></span>
+<span><a href="variable/index.html#static-variable-ColorPalette">ColorPalette</a></span>
+<span><a href="variable/index.html#static-variable-DEBUG_FPS">DEBUG_FPS</a></span>
+<span><a href="variable/index.html#static-variable-DEBUG_MODE">DEBUG_MODE</a></span>
+<span><a href="variable/index.html#static-variable-DEFAULT_LANG">DEFAULT_LANG</a></span>
+<span><a href="variable/index.html#static-variable-DEV_MODE">DEV_MODE</a></span>
+<span><a href="variable/index.html#static-variable-DIMENSION">DIMENSION</a></span>
+<span><a href="variable/index.html#static-variable-DISPLAY_SHADOWS">DISPLAY_SHADOWS</a></span>
+<span><a href="variable/index.html#static-variable-DOWN">DOWN</a></span>
+<span><a href="variable/index.html#static-variable-EASING_CAMERA">EASING_CAMERA</a></span>
+<span><a href="variable/index.html#static-variable-EDIT_MODE">EDIT_MODE</a></span>
+<span><a href="variable/index.html#static-variable-FREE_CAMERA">FREE_CAMERA</a></span>
+<span><a href="variable/index.html#static-variable-GOD_MODE">GOD_MODE</a></span>
+<span><a href="variable/index.html#static-variable-GRAVITY">GRAVITY</a></span>
+<span><a href="variable/index.html#static-variable-GRID_WIDTH">GRID_WIDTH</a></span>
+<span><a href="variable/index.html#static-variable-IS_CLIENT">IS_CLIENT</a></span>
+<span><a href="variable/index.html#static-variable-LEFT">LEFT</a></span>
+<span><a href="variable/index.html#static-variable-LOCAL_PLAYER">LOCAL_PLAYER</a></span>
+<span><a href="variable/index.html#static-variable-MAX_SCALE">MAX_SCALE</a></span>
+<span><a href="variable/index.html#static-variable-MINI_MAP">MINI_MAP</a></span>
+<span><a href="variable/index.html#static-variable-MIN_SCALE">MIN_SCALE</a></span>
+<span><a href="variable/index.html#static-variable-OFFLINE_MODE">OFFLINE_MODE</a></span>
+<span><a href="variable/index.html#static-variable-PIXEL_SCALE">PIXEL_SCALE</a></span>
+<span><a href="variable/index.html#static-variable-RECORD_MODE">RECORD_MODE</a></span>
+<span><a href="variable/index.html#static-variable-RENDER_MODE">RENDER_MODE</a></span>
+<span><a href="variable/index.html#static-variable-RIGHT">RIGHT</a></span>
+<span><a href="variable/index.html#static-variable-SHADOW_ALPHA">SHADOW_ALPHA</a></span>
+<span><a href="variable/index.html#static-variable-SHADOW_X">SHADOW_X</a></span>
+<span><a href="variable/index.html#static-variable-SHADOW_Y">SHADOW_Y</a></span>
+<span><a href="variable/index.html#static-variable-TILESET_MODE">TILESET_MODE</a></span>
+<span><a href="variable/index.html#static-variable-TYPES">TYPES</a></span>
+<span><a href="variable/index.html#static-variable-UP">UP</a></span>
+<span><a href="variable/index.html#static-variable-VERSION">VERSION</a></span>
+<span><a href="variable/index.html#static-variable-VOLUME">VOLUME</a></span>
+<span><a href="variable/index.html#static-variable-WALK_BY_KEYBOARD">WALK_BY_KEYBOARD</a></span>
+<span><a href="variable/index.html#static-variable-WGL">WGL</a></span>
+<span><a href="variable/index.html#static-variable-WGL_SUPPORT">WGL_SUPPORT</a></span>
+<span><a href="variable/index.html#static-variable-Y_DEPTH_HACK">Y_DEPTH_HACK</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">43/43</span></td>
+      <td style="display: none;" data-ice="size">5235 byte</td>
+      <td style="display: none;" data-ice="lines">356</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/libs/Howler.js.html">src/libs/Howler.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">46702 byte</td>
+      <td style="display: none;" data-ice="lines">1362</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/libs/astar.js.html">src/libs/astar.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">11075 byte</td>
+      <td style="display: none;" data-ice="lines">403</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/libs/seed.js.html">src/libs/seed.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">11815 byte</td>
+      <td style="display: none;" data-ice="lines">268</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/libs/wheel.js.html">src/libs/wheel.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">2668 byte</td>
+      <td style="display: none;" data-ice="lines">64</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/polyfill.js.html">src/polyfill.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">3380 byte</td>
+      <td style="display: none;" data-ice="lines">111</td>
+      <td style="display: none;" data-ice="updated">2017-05-07 08:13:13 (UTC)</td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.5.2)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

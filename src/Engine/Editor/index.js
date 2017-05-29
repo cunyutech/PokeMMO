@@ -242,13 +242,13 @@ export default class Editor {
 
   }
 
-  /**
-   * Get a entity by mouse offset
-   * @param  {Number} x
-   * @param  {Number} y
-   * @param  {Object}
-   * @return {Object}
-   */
+  ///**
+  // * Get a entity by mouse offset
+  // * @param  {Number} x
+  // * @param  {Number} y
+  // * @param  {Object}
+  // * @return {Object}
+  //*/
   getEntityByMouse(x, y) {
 
     let object = null;
